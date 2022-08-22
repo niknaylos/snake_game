@@ -1,7 +1,7 @@
 import pygame
 import time
 import random
-import threading
+
  
 pygame.init()
  
@@ -30,7 +30,19 @@ def Your_score(score):
 def difficulty(snake_speed):
     value = score_font.render(str(f'Snake speed: {snake_speed}'), True, magenta)
     dis.blit(value, [200, 250])
- 
+def pbest(score):
+    with open('records.txt', 'r+') as f:
+        records = str(score)
+        current = f.read()
+        if int(current) <= int(records):
+            f.seek(0) 
+            f.write(records)
+            f.truncate
+            pbest = records
+        else:
+            pbest = current
+    value = score_font.render(str(f'Personal best: {pbest}'), True, magenta)
+    dis.blit(value, [100, 350]) 
  
  
 def our_snake(snake_block, snake_list):
@@ -41,8 +53,8 @@ def our_snake(snake_block, snake_list):
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
     dis.blit(mesg, [dis_width / 6, dis_height / 3])
- 
- 
+
+
 def gameLoop():
     snake_speed = 12
     game_over = False
@@ -73,6 +85,7 @@ def gameLoop():
             message("    C to play again, Q to quit", magenta)
             Your_score(Length_of_snake - 1)
             difficulty(snake_speed)
+            pbest(Length_of_snake - 1)
             pygame.display.update()
  
             for event in pygame.event.get():
