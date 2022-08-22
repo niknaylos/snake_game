@@ -14,4 +14,4 @@ ToDo:
 
 - Add blockers to increase difficulty
 - Add bonus food appearing randomly for a short time to decrease snake size 
-- Add personal best records
+- Add personal best records: ✔️
