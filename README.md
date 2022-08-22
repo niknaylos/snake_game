@@ -1,6 +1,6 @@
 # snake_game
-Modified game 'Snake' using module pyGame
-
+## Modified game 'Snake' using module pyGame
+Added controls with W A S D
 Increasing speed of the snake every time you eat.
 Showing your score in caption.
 Showing your score and snake speed at the end of session.
