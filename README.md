@@ -1,4 +1,4 @@
-# snake_game
+# Snake
 ## Modified game 'Snake' using module pyGame
 Added controls with W A S D
 Increasing speed of the snake every time you eat.
