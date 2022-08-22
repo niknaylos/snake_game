@@ -9,6 +9,10 @@ Showing your score and snake speed at the end of session.
 
 ![Snake2](https://user-images.githubusercontent.com/32687696/185805438-3278bcbc-5126-412d-b959-5aa8034b3bde.png)
 
+UPD 08.22.2022:
+
+Personal best record is saved into records.txt. Script checks if your recent session score is higher than the one written in the file. If it is – record gets overwritten.
+
 
 ToDo:
 
