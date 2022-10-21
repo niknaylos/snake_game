@@ -15,8 +15,3 @@
 Personal best record is saved into records.txt. Script checks if your recent session score is higher than the one written in the file. If it is – record gets overwritten.
 
 
-ToDo:
-
-- Add blockers to increase difficulty
-- Add bonus food appearing randomly for a short time to decrease snake size 
-- Add personal best records: ✔️
